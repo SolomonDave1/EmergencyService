@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userRegistration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:fillViewport="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginTop="0.3dp"
+                android:gravity="center"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+
+                />
+
+
+            <Button
+                android:id="@+id/btImageUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Image"
+                android:width="120dp"
+                android:background="@drawable/loginbtn"
+                android:gravity="center"
+                android:onClick="selectImage"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="35dp"/>
+
+            <EditText
+                android:id="@+id/edFullName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Full name"
+                android:inputType="textPersonName"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email address"
+                android:textSize="15dp"
+                android:layout_marginTop="25dp"
+                android:inputType="textEmailAddress"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/etUserPassword"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edContact"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@android:string/emptyPhoneNumber"
+                android:inputType="phone"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edAddress"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Address"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/edPersonToContact"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/pad"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Person to if unreachable"
+                android:inputType="textPersonName"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edPersonToContact_no"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/pad"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@android:string/emptyPhoneNumber"
+                android:inputType="phone"
+                android:textSize="15dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/btRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:width="150dp"
+                android:background="@drawable/loginbtn"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="35dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
